@@ -1,0 +1,29 @@
+server:
+  port: 8762
+s2:
+  check:
+    token:
+      endpoint: http://localhost:8762/oauth/check_token
+zuul:
+  sensitiveHeaders: Cookie,Set-Cookie
+  routes:
+    travel-management-auth-server:
+      path: /oauth/**
+      serviceId: travel-management-auth-server
+      strip-prefix: false
+    travel-management-customer-api:
+      path: /customer/**
+      serviceId: travel-management-customer-api
+      strip-prefix: false
+    travel-management-employee-api:
+      path: /employee/**
+      serviceId: travel-management-employee-api
+      strip-prefix: false
+    travel-management-trip-api:
+      path: /trip/**
+      serviceId: travel-management-trip-api
+      strip-prefix: false
+    travel-management-trip-query-api:
+      path: /trip-query/**
+      serviceId: travel-management-trip-query-api
+      strip-prefix: false
