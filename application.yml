@@ -8,7 +8,7 @@ management:
       show-details: always        
 eureka:
   instance:
-    preferIpAddress: false
+    preferIpAddress: true
   client:
     registerWithEureka: true
     fetchRegistry: true
