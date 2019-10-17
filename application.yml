@@ -13,7 +13,7 @@ eureka:
     registerWithEureka: true
     fetchRegistry: true
     serviceUrl:
-      defaultZone: http://travel-management-eureka-server/eureka
+      defaultZone: http://travel-management-eureka-server:8761/eureka
 s2:
   client:
     id: s2-client
