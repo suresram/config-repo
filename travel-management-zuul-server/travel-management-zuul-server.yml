@@ -3,7 +3,7 @@ server:
 s2:
   check:
     token:
-      endpoint: http://travel-management-auth-server:8762/oauth/check_token
+      endpoint: http://travel-management-zuul-server-travel-management.apps.na311.openshift.opentlc.com/oauth/check_token
 zuul:
   sensitiveHeaders: Cookie,Set-Cookie
   routes:
