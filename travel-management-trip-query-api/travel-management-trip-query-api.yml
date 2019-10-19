@@ -5,4 +5,4 @@ servlet:
 spring:
   data:
     mongodb:
-      uri: mongodb://tripAdmin:tripAdmin@localhost/tripDB
+      uri: mongodb://${database-user}:${database-password}@mongodb/${database-name}
