@@ -27,3 +27,21 @@ zuul:
       path: /trip-query/**
       serviceId: travel-management-trip-query-api
       strip-prefix: false
+travel-management-auth-server:
+  ribbon:
+    ActiveConnectionsLimit: 10
+travel-management-trip-query-api:
+  ribbon:
+    ActiveConnectionsLimit: 10
+hystrix:
+  command:
+    travel-management-auth-server:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 10000
+    travel-management-trip-query-api:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 10000
