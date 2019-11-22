@@ -2,7 +2,3 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka
-spring:
-  data:
-    mongodb:
-      uri: mongodb://tripAdmin:tripAdmin@localhost/tripDB

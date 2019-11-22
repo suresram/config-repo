@@ -2,7 +2,3 @@ server:
   port: 8765
 servlet:
   context-path: /trip-query
-spring:
-  data:
-    mongodb:
-      uri: mongodb://${database-user}:${database-password}@mongodb/${database-name}
