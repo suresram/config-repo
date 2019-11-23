@@ -5,10 +5,7 @@ management:
         include: '*'
   endpoint:
     health:
-      show-details: always
-hystrix:
-  metrics:
-    enabled: true        
+      show-details: always      
 eureka:
   instance:
     preferIpAddress: true
@@ -22,6 +19,8 @@ s2:
     id: s2-client
     secret: secret
 hystrix:
+  metrics:
+    enabled: true  
   command:
     default:
       execution:
