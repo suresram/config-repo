@@ -31,5 +31,5 @@ hystrix:
       maxQueueSize: 15
       queueSizeRejectionThreshold: 300
 ribbon.ConnectTimeout: 3000
-ribbon.ReadTimeout: 30000
+ribbon.ReadTimeout: 3000
     
