@@ -27,3 +27,6 @@ zuul:
       path: /trip-query/**
       serviceId: travel-management-trip-query-api
       strip-prefix: false
+white:
+  listed:
+    endpoints: "/oauth/**,/actuator/**,/hystrix/**,/webjars/**,/proxy.stream"
