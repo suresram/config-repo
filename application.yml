@@ -18,20 +18,4 @@ s2:
   client:
     id: s2-client
     secret: secret
-hystrix:
-  metrics:
-    enabled: true  
-  command:
-    default:
-      execution:
-        isolation:
-          thread:
-            timeoutInMilliseconds: 15000
-  threadpool:
-    default:
-      coreSize: 10
-      maxQueueSize: 15
-      queueSizeRejectionThreshold: 300
-ribbon.ConnectTimeout: 3000
-ribbon.ReadTimeout: 3000
     
