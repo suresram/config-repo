@@ -30,14 +30,6 @@ zuul:
 white:
   listed:
     endpoints: "/oauth/**,/actuator/**,/hystrix/**,/webjars/**,/proxy.stream"
-travel-management-trip-api:
-  ribbon:
-    NIWSServerListClassName: com.netflix.loadbalancer.ConfigurationBasedServerList
-    listOfServers: http://travel-management-trip-query-api:8765
-    ConnectTimeout: 1000
-    ReadTimeout: 3000
-    MaxTotalHttpConnections: 500
-    MaxConnectionsPerHost: 100
 hystrix:
   metrics:
     enabled: true  
