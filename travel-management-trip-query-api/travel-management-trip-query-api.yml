@@ -5,4 +5,4 @@ servlet:
 spring:
   data:
     mongodb:
-      uri: mongodb://${database-user}:${database-password}@mongodb/${database-name}
+      uri: mongodb://${database-user}:${database-password}@ds159025.mlab.com:59025/${database-name}
