@@ -15,6 +15,14 @@ zuul:
       path: /events/**
       serviceId: event-detail-service
       strip-prefix: false
+    event-management-service:
+      path: /admin/**
+      serviceId: event-management-service
+      strip-prefix: false
+    event-registration-service:
+      path: /regisration/**
+      serviceId: event-registration-service
+      strip-prefix: false
 white:
   listed:
     endpoints: "/oauth/**,/actuator/**,/hystrix/**,/webjars/**,/proxy.stream"
