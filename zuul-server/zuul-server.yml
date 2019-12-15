@@ -20,7 +20,7 @@ zuul:
       serviceId: event-management-service
       strip-prefix: false
     event-registration-service:
-      path: /regisration/**
+      path: /registration/**
       serviceId: event-registration-service
       strip-prefix: false
 white:
