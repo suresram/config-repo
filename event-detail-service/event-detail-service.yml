@@ -1,0 +1,8 @@
+server:
+  port: 8765
+servlet:
+  context-path: /events
+spring:
+  data:
+    mongodb:
+      uri: mongodb://${database-user}:${database-password}@ds159025.mlab.com:59025/${database-name}

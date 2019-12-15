@@ -1,0 +1,6 @@
+server:
+  port: 8764
+spring:
+  data:
+    mongodb:
+      uri: mongodb://${database-user}:${database-password}@ds159025.mlab.com:59025/${database-name}
