@@ -1,8 +1,0 @@
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8761/eureka
-s2:
-  check:
-    token:
-      endpoint: http://localhost:8762/oauth/check_token
